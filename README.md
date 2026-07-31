@@ -84,5 +84,5 @@ git clone https://github.com/juandiegogalindo/DesarrolloAplicaciones-Algoritmo.g
 **Juan Diego Galindo**
 Estudiante de Ingeniería de Sistemas - Quinto Semestre
  
-- GitHub: [@tu-usuario](https://github.com/juandiegogalindo)
-- LinkedIn: [tu-perfil](https://linkedin.com/in/jdgalindo6)
+- GitHub: [Juan Diego Galindo](https://github.com/juandiegogalindo)
+- LinkedIn: [Juan Diego Galindo Montenegro](https://linkedin.com/in/jdgalindo6)

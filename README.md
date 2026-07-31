@@ -1,12 +1,12 @@
-# DesarrolloAplicaciones-Algoritmo — Compresión LZW Cliente/Servidor
+# Algoritmo LWZ — Compresión LZW Cliente/Servidor
 
 ## 1. Descripción general
 
-Proyecto académico en **Java** que implementa el **algoritmo de compresión LZW (Lempel-Ziv-Welch)** sobre una arquitectura **cliente-servidor** comunicada por **sockets TCP**.
+Proyecto académico en **Java** que implementa el **algoritmo de compresión LZW (Lempel-Ziv-Welch)** sobre una arquitectura cliente-servidor comunicada por sockets TCP.
 
 El servidor toma un archivo de texto, lo comprime en tiempo real generando códigos numéricos, y los transmite a uno o varios clientes conectados. Cada cliente reconstruye (descomprime) el mensaje original usando la misma lógica de diccionario, y lo muestra en consola letra por letra, alternando colores para diferenciar visualmente cada paso de la decodificación.
 
-> Nota: no es un ejercicio sobre el abecedario. Lo que sí usa es la **tabla ASCII (caracteres 0–255)** como diccionario inicial del algoritmo — de ahí la posible confusión.
+> Nota: no es un ejercicio sobre el abecedario. Lo que sí usa es la **tabla ASCII (caracteres 0–255)** como diccionario inicial del algoritmo.
 
 ## 2. ¿Qué es LZW y qué hace este proyecto con él?
 

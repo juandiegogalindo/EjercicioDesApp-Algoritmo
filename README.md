@@ -79,16 +79,10 @@ git clone https://github.com/juandiegogalindo/DesarrolloAplicaciones-Algoritmo.g
 3. Ejecutar `client.view.ClientApp` en la otra máquina (o en otra terminal si es local) e ingresar el puerto de escucha.
 4. Desde el menú del servidor, elegir la opción de enviar el mensaje codificado y ver cómo el cliente lo reconstruye en pantalla.
 
-## 7. Conceptos nuevos que se usan en este código
-
-Cosas del código que probablemente no hayas usado todavía en Java, JS o Spring Boot:
-
-- **`try (...) { }` (try-with-resources):** es una variante del `try/catch` que abre un recurso (como un `Socket` o un `ServerSocket`) dentro del paréntesis, y Java se encarga automáticamente de cerrarlo al terminar el bloque, aunque ocurra una excepción. Evita tener que escribir un `finally` con `socket.close()` manualmente.
-- **`Runnable` + `Thread`:** `Runnable` es una interfaz que define un método `run()`. Cuando una clase la implementa (como `ServerConnection`), se le puede pasar a un `Thread` para que ese código se ejecute en un **hilo separado**, en paralelo al resto del programa (en este caso, para escuchar conexiones sin bloquear el resto de la app).
-- **`Consumer<Integer>` (interfaz funcional):** viene del paquete `java.util.function`. Representa "una función que recibe un valor y no devuelve nada". Se usa para pasar un **callback**: `ServerEncode` no sabe qué hacer con cada código generado, entonces recibe una función (`callback.accept(codigo)`) que se ejecuta cada vez que se genera un nuevo código, y quien la definió (`ServerController`) decide qué hacer con ese código (en este caso, enviarlo a los clientes).
-- **`DataInputStream` / `DataOutputStream`:** son flujos de entrada/salida que permiten leer y escribir tipos de datos primitivos (como `int`) directamente por un socket, sin tener que convertir manualmente a texto o bytes.
-- **Códigos de escape ANSI (`\u001B[34m...\u001B[0m`):** son secuencias especiales que, al imprimirse en una terminal compatible, cambian el color del texto (34 = azul, 31 = rojo) hasta que se resetea con `\u001B[0m`.
-
-## 8. Notas
-
-El `README.md` original del repositorio no describía correctamente el proyecto (mencionaba "ejercicios de algoritmia básica" y un link de clonado con otro nombre de repositorio). Este README reemplaza esa descripción por una que corresponde al código real: un compresor/descompresor LZW con comunicación cliente-servidor.
+## 7. Autor
+ 
+**Juan Diego Galindo**
+Estudiante de Ingeniería de Sistemas - Quinto Semestre
+ 
+- GitHub: [@tu-usuario](https://github.com/juandiegogalindo)
+- LinkedIn: [tu-perfil](https://linkedin.com/in/jdgalindo6)
